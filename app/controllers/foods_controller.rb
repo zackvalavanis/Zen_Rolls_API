@@ -10,13 +10,15 @@ class FoodsController < ApplicationController
       render :show
     else 
       render json: { error: 'Food item not found'}, status: :not_found
+    end
   end
 
   def create 
     @food = Food.new(
       name: params[:name], 
       price: params[:price], 
-      image_url: params[:image_url]
+      image_url: params[:image_url],
+      description: params[:description]
     )
     if @food.save 
       render json: { message: 'The food has been created'}, status: :created
@@ -31,7 +33,8 @@ class FoodsController < ApplicationController
       if @food.update(
         name: params[:name] || @food.name, 
         price: params[:price] || @food.price, 
-        image_url: params[:image_url] || @food.image_url
+        image_url: params[:image_url] || @food.image_url,
+        description: params[:description] || @food.description
       )
         render json: { message: 'Food item updated', food: @food}, status: :okay
       else 
