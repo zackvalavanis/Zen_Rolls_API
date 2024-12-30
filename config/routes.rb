@@ -19,6 +19,14 @@ Rails.application.routes.draw do
   patch '/foods/:id' => 'foods#update'
   delete '/foods/:id' => 'foods#destroy'
 
+  #Categories
+  get '/categories' => 'categories#index'
+  get '/categories/:id' => 'categories#show'
+  post '/categories' => 'categories#create'
+  patch '/categories/:id' => 'categories#update'
+  delete '/categories/:id' => 'categories#destroy'
+
+
   # Defines the root path route ("/")
   # root "posts#index"
 end
