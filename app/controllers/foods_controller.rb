@@ -38,7 +38,7 @@ class FoodsController < ApplicationController
         description: params[:description] || @food.description,
         category_id: params[:category_id] || @food.category_id
       )
-        render json: { message: 'Food item updated', food: @food}, status: :okay
+        render json: { message: 'Food item updated', food: @food}, status: :ok
       else 
         render json: { errors: @food.errors.errors_full_messages}, status: :unprocessable_entity
       end

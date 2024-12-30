@@ -30,7 +30,7 @@ class CategoriesController < ApplicationController
         if @category.update(
           name: params[:name] || @category.name, 
         )
-          render json: { message: 'Category item updated', category: @category}, status: :okay
+          render json: { message: 'Category item updated', category: @category}, status: :ok
         else 
           render json: { errors: @category.errors.errors_full_messages}, status: :unprocessable_entity
         end
