@@ -8,6 +8,18 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
+# food = Food.new(
+#   name: "California Roll",
+#   price: 3.99,
+#   image_url: 'https://www.blondelish.com/wp-content/uploads/2020/11/California-Rolls-Recipe-Sushi-Rice-Recipe-10.jpg',
+#   description: 'Imitation Crab and avocado'
+# )
+# if food.save 
+#   puts "Food created successfully: #{food.name}"
+# else 
+#   puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+# end 
+
 food = Food.new(
   name: "California Roll",
   price: 3.99,
