@@ -42,65 +42,65 @@
 #   puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
 # end 
 
-category = Category.new(
-  name: "Specialty Rolls",
-)
-if category.save 
-  puts "Category created successfully: #{category.name}"
-else 
-  puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
-end 
+# category = Category.new(
+#   name: "Specialty Rolls",
+# )
+# if category.save 
+#   puts "Category created successfully: #{category.name}"
+# else 
+#   puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
+# end 
 
-category = Category.new(
-  name: "Nigiri",
-)
-if category.save 
-  puts "Category created successfully: #{category.name}"
-else 
-  puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
-end 
+# category = Category.new(
+#   name: "Nigiri",
+# )
+# if category.save 
+#   puts "Category created successfully: #{category.name}"
+# else 
+#   puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
+# end 
 
-category = Category.new(
-  name: "Sashimi",
-)
-if category.save 
-  puts "Category created successfully: #{category.name}"
-else 
-  puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
-end 
+# category = Category.new(
+#   name: "Sashimi",
+# )
+# if category.save 
+#   puts "Category created successfully: #{category.name}"
+# else 
+#   puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
+# end 
 
-category = Category.new(
-  name: "Party Trays",
-)
-if category.save 
-  puts "Category created successfully: #{category.name}"
-else 
-  puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
-end 
+# category = Category.new(
+#   name: "Party Trays",
+# )
+# if category.save 
+#   puts "Category created successfully: #{category.name}"
+# else 
+#   puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
+# end 
 
-category = Category.new(
-  name: "Party Trays",
-)
-if category.save 
-  puts "Category created successfully: #{category.name}"
-else 
-  puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
-end 
+# category = Category.new(
+#   name: "Party Trays",
+# )
+# if category.save 
+#   puts "Category created successfully: #{category.name}"
+# else 
+#   puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
+# end 
 
-category = Category.new(
-  name: "Sides",
-)
-if category.save 
-  puts "Category created successfully: #{category.name}"
-else 
-  puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
-end 
+# category = Category.new(
+#   name: "Sides",
+# )
+# if category.save 
+#   puts "Category created successfully: #{category.name}"
+# else 
+#   puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
+# end 
 
-category = Category.new(
-  name: "Beverages",
-)
-if category.save 
-  puts "Category created successfully: #{category.name}"
-else 
-  puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
-end 
+# category = Category.new(
+#   name: "Beverages",
+# )
+# if category.save 
+#   puts "Category created successfully: #{category.name}"
+# else 
+#   puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
+# end 
