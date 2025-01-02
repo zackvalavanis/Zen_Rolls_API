@@ -157,64 +157,155 @@
 #   puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
 # end 
 
-food = Food.new(
-  name: "Chicago Roll",
-  price: 10.50,
-  image_url: 'https://136592157.cdn6.editmysite.com/uploads/1/3/6/5/136592157/s644165306373586183_p17_i1_w5472.jpeg?width=2560&dpr=2',
-  description: 'Tuna, albacore tuna, scallions, spicy mayo',
-  category_id: 2
-)
-if food.save 
-  puts "Food created successfully: #{food.name}"
-else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
-end 
+# food = Food.new(
+#   name: "Chicago Roll",
+#   price: 10.50,
+#   image_url: 'https://136592157.cdn6.editmysite.com/uploads/1/3/6/5/136592157/s644165306373586183_p17_i1_w5472.jpeg?width=2560&dpr=2',
+#   description: 'Tuna, albacore tuna, scallions, spicy mayo',
+#   category_id: 2
+# )
+# if food.save 
+#   puts "Food created successfully: #{food.name}"
+# else 
+#   puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+# end 
+
+# food = Food.new(
+#   name: "Samurai Roll",
+#   price: 12.99,
+#   image_url: 'https://136592157.cdn6.editmysite.com/uploads/1/3/6/5/136592157/s644165306373586183_p94_i1_w5472.jpeg?width=2560&dpr=2',
+#   description: 'Salmon, avocado, cucumber, chili mayo, wrapped with soy paper, with tempura crunch, eel sauce, and wasabi mayo on top',
+#   category_id: 2
+# )
+# if food.save 
+#   puts "Food created successfully: #{food.name}"
+# else 
+#   puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+# end 
+
+# food = Food.new(
+#   name: "Dragon Roll",
+#   price: 14.99,
+#   image_url: 'https://136592157.cdn6.editmysite.com/uploads/1/3/6/5/136592157/s644165306373586183_p304_i2_w5472.jpeg?width=2560&dpr=2',
+#   description: 'Eel and smelt roe, with eel, eel sauce and avocado on top',
+#   category_id: 2
+# )
+# if food.save 
+#   puts "Food created successfully: #{food.name}"
+# else 
+#   puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+# end 
+
+# food = Food.new(
+#   name: "Rainbow Roll",
+#   price: 14.99,
+#   image_url: 'https://136592157.cdn6.editmysite.com/uploads/1/3/6/5/136592157/s644165306373586183_p295_i1_w1735.jpeg?dpr=2',
+#   description: 'Imitation crab, avocado with tuna, salmon, yellowtail and shrimp on top',
+#   category_id: 2
+# )
+# if food.save 
+#   puts "Food created successfully: #{food.name}"
+# else 
+#   puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+# end 
+
+# food = Food.new(
+#   name: "Caterpillar Roll",
+#   price: 15.99,
+#   image_url: 'https://136592157.cdn6.editmysite.com/uploads/1/3/6/5/136592157/s644165306373586183_p336_i4_w3888.jpeg?width=2560&dpr=2',
+#   description: 'Eel, spicy mayo, tempura crunch, wrapped with soy paper, with avocado and eel sauce on top',
+#   category_id: 2
+# )
+# if food.save 
+#   puts "Food created successfully: #{food.name}"
+# else 
+#   puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+# end 
+
+# food = Food.new(
+#   name: "King Salmon Nigiri",
+#   price: 3.50,
+#   image_url: 'https://136592157.cdn6.editmysite.com/uploads/1/3/6/5/136592157/s644165306373586183_p298_i1_w1389.jpeg?dpr=2',
+#   description: 'Salmon nigiri',
+#   category_id: 3
+# )
+# if food.save 
+#   puts "Food created successfully: #{food.name}"
+# else 
+#   puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+# end 
+
+# food = Food.new(
+#   name: "Fresh Water Eel (Unagi) Nigiri",
+#   price: 3.50,
+#   image_url: 'https://136592157.cdn6.editmysite.com/uploads/1/3/6/5/136592157/s644165306373586183_p9_i1_w1339.jpeg?dpr=2',
+#   description: 'Eel nigiri',
+#   category_id: 3
+# )
+# if food.save 
+#   puts "Food created successfully: #{food.name}"
+# else 
+#   puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+# end 
+
+# food = Food.new(
+#   name: "Tuna (Maguro) Nigiri",
+#   price: 3.50,
+#   image_url: 'https://136592157.cdn6.editmysite.com/uploads/1/3/6/5/136592157/s644165306373586183_p5_i1_w1108.jpeg?dpr=2',
+#   description: 'Tuna nigiri',
+#   category_id: 3
+# )
+# if food.save 
+#   puts "Food created successfully: #{food.name}"
+# else 
+#   puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+# end 
+
+# food = Food.new(
+#   name: "Sea Urchin (Uni) Nigiri",
+#   price: 9.29,
+#   image_url: 'https://136592157.cdn6.editmysite.com/uploads/1/3/6/5/136592157/s644165306373586183_p213_i1_w1083.jpeg?dpr=2',
+#   description: 'Sea urchin nigiri',
+#   category_id: 3
+# )
+# if food.save 
+#   puts "Food created successfully: #{food.name}"
+# else 
+#   puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+# end 
+
+# food = Food.new(
+#   name: "Octopus (Tako) Nigiri",
+#   price: 3.50,
+#   image_url: 'https://136592157.cdn6.editmysite.com/uploads/1/3/6/5/136592157/s644165306373586183_p363_i1_w1451.jpeg?dpr=2',
+#   description: 'Octopus nigiri',
+#   category_id: 3
+# )
+# if food.save 
+#   puts "Food created successfully: #{food.name}"
+# else 
+#   puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+# end 
+
+# food = Food.new(
+#   name: "Shrimp (Ebi) Nigiri",
+#   price: 2.50,
+#   image_url: 'https://136592157.cdn6.editmysite.com/uploads/1/3/6/5/136592157/s644165306373586183_p235_i1_w1205.jpeg?dpr=2',
+#   description: 'Shrimp nigiri',
+#   category_id: 3
+# )
+# if food.save 
+#   puts "Food created successfully: #{food.name}"
+# else 
+#   puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+# end 
 
 food = Food.new(
-  name: "Samurai Roll",
-  price: 12.99,
-  image_url: 'https://136592157.cdn6.editmysite.com/uploads/1/3/6/5/136592157/s644165306373586183_p94_i1_w5472.jpeg?width=2560&dpr=2',
-  description: 'Salmon, avocado, cucumber, chili mayo, wrapped with soy paper, with tempura crunch, eel sauce, and wasabi mayo on top',
-  category_id: 2
-)
-if food.save 
-  puts "Food created successfully: #{food.name}"
-else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
-end 
-
-food = Food.new(
-  name: "Dragon Roll",
-  price: 14.99,
-  image_url: 'https://136592157.cdn6.editmysite.com/uploads/1/3/6/5/136592157/s644165306373586183_p304_i2_w5472.jpeg?width=2560&dpr=2',
-  description: 'Eel and smelt roe, with eel, eel sauce and avocado on top',
-  category_id: 2
-)
-if food.save 
-  puts "Food created successfully: #{food.name}"
-else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
-end 
-
-food = Food.new(
-  name: "Rainbow Roll",
-  price: 14.99,
-  image_url: 'https://136592157.cdn6.editmysite.com/uploads/1/3/6/5/136592157/s644165306373586183_p295_i1_w1735.jpeg?dpr=2',
-  description: 'Imitation crab, avocado with tuna, salmon, yellowtail and shrimp on top',
-  category_id: 2
-)
-if food.save 
-  puts "Food created successfully: #{food.name}"
-else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
-end 
-
-food = Food.new(
-  name: "Caterpillar Roll",
-  price: 15.99,
-  image_url: 'https://136592157.cdn6.editmysite.com/uploads/1/3/6/5/136592157/s644165306373586183_p336_i4_w3888.jpeg?width=2560&dpr=2',
-  description: 'Eel, spicy mayo, tempura crunch, wrapped with soy paper, with avocado and eel sauce on top',
-  category_id: 2
+  name: "Shrimp (Ebi) Nigiri",
+  price: 2.50,
+  image_url: 'https://136592157.cdn6.editmysite.com/uploads/1/3/6/5/136592157/s644165306373586183_p235_i1_w1205.jpeg?dpr=2',
+  description: 'Shrimp nigiri',
+  category_id: 4
 )
 if food.save 
   puts "Food created successfully: #{food.name}"
