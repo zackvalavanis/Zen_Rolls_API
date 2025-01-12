@@ -1,6 +1,7 @@
 json.id category.id
 json.name category.name
 json.foods category.foods do |food|
+  json.id food.id
   json.name food.name
   json.price food.price
   json.description food.description
