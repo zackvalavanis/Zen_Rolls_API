@@ -17,7 +17,7 @@ class CartItemsController < ApplicationController
     if cart_item
       cart_item.update(quantity: cart_item.quantity + params[:quantity].to_i)
     else
-      cart_item = cart.cart_items.new(food_id: params[:food_id], quantity: params[:quantity])
+      cart_item = cart.cart_items.new(food_id: params[:food_id], quantity: params[:quantity] || 1)
     end
 
     if cart_item.save
