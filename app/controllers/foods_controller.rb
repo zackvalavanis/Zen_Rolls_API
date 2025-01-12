@@ -19,7 +19,8 @@ class FoodsController < ApplicationController
       price: params[:price], 
       image_url: params[:image_url],
       description: params[:description],
-      category_id: params[:category_id] 
+      category_id: params[:category_id], 
+      imventory: params[:inventory]
     )
     if @food.save 
       render json: { message: 'The food has been created'}, status: :created
@@ -36,7 +37,8 @@ class FoodsController < ApplicationController
         price: params[:price] || @food.price, 
         image_url: params[:image_url] || @food.image_url,
         description: params[:description] || @food.description,
-        category_id: params[:category_id] || @food.category_id
+        category_id: params[:category_id] || @food.category_id, 
+        inventory: params[:inventory] || @food.inventory
       )
         render json: { message: 'Food item updated', food: @food}, status: :ok
       else 

@@ -5,4 +5,5 @@ json.foods category.foods do |food|
   json.price food.price
   json.description food.description
   json.image_url food.image_url
+  json.inventory food.inventory
 end

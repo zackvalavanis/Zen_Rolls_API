@@ -637,11 +637,3 @@
 # else 
 #   puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
 # end
-
-
-
-
-
-
-
-
