@@ -1,6 +1,7 @@
 class Cart < ApplicationRecord
   has_many :cart_items
   has_many :foods, through: :cart_items
+  has_one :order
 
   def add_food(food, quantity = 1)
     existing_item = cart_items.find_by(food: food)  # Look for cart_items, not the Cart itself
