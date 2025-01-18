@@ -75,3 +75,7 @@ gem 'stripe'
 group :development, :test do
   gem 'dotenv-rails'
 end
+
+group :production do
+  gem 'rails_12factor'
+end
