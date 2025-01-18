@@ -69,3 +69,9 @@ end
 gem 'jwt'
 
 gem 'rack-cors'
+
+gem 'stripe'
+
+group :development, :test do
+  gem 'dotenv-rails'
+end
