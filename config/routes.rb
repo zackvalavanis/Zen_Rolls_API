@@ -41,5 +41,5 @@ Rails.application.routes.draw do
   delete '/carts/:id' => 'carts#destroy'
   
   # Defines the root path route ("/")
-  # root "posts#index"
+  root "foods#index"
 end
