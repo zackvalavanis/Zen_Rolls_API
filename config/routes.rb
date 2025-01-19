@@ -40,6 +40,10 @@ Rails.application.routes.draw do
   patch '/carts/:id' => 'carts#update'
   delete '/carts/:id' => 'carts#destroy'
   
+  #health check
+  get "up" => "rails/health#show"
+  
   # Defines the root path route ("/")
-  root "home#index"
+  root "homes#index"
+
 end
