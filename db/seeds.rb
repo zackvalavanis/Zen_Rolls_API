@@ -17,7 +17,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -29,7 +29,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 
@@ -39,7 +39,7 @@ category = Category.new(
 if category.save 
   puts "Category created successfully: #{category.name}"
 else 
-  puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
+  puts "Failed to create category"
 end 
 
 category = Category.new(
@@ -48,7 +48,7 @@ category = Category.new(
 if category.save 
   puts "Category created successfully: #{category.name}"
 else 
-  puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
+  puts "Failed to create category"
 end 
 
 category = Category.new(
@@ -57,7 +57,7 @@ category = Category.new(
 if category.save 
   puts "Category created successfully: #{category.name}"
 else 
-  puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
+  puts "Failed to create category"
 end 
 
 category = Category.new(
@@ -66,7 +66,7 @@ category = Category.new(
 if category.save 
   puts "Category created successfully: #{category.name}"
 else 
-  puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
+  puts "Failed to create category"
 end 
 
 category = Category.new(
@@ -75,7 +75,7 @@ category = Category.new(
 if category.save 
   puts "Category created successfully: #{category.name}"
 else 
-  puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
+  puts "Failed to create category"
 end 
 
 category = Category.new(
@@ -84,7 +84,7 @@ category = Category.new(
 if category.save 
   puts "Category created successfully: #{category.name}"
 else 
-  puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
+  puts "Failed to create category"
 end 
 
 category = Category.new(
@@ -93,7 +93,7 @@ category = Category.new(
 if category.save 
   puts "Category created successfully: #{category.name}"
 else 
-  puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
+  puts "Failed to create category"
 end 
 
 category = Category.new(
@@ -102,7 +102,7 @@ category = Category.new(
 if category.save 
   puts "Category created successfully: #{category.name}"
 else 
-  puts "Failed to create category: #{category.errors_full_messages.join(', ')}"
+  puts "Failed to create category"
 end 
 
 food = Food.new(
@@ -115,7 +115,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -128,7 +128,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -141,7 +141,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -154,7 +154,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -167,7 +167,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -180,7 +180,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -193,7 +193,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -206,7 +206,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -219,7 +219,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -232,7 +232,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -245,7 +245,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -258,7 +258,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -271,7 +271,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -284,7 +284,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -297,7 +297,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -310,7 +310,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -323,7 +323,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -336,7 +336,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -349,7 +349,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -362,7 +362,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -375,7 +375,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -388,7 +388,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -401,7 +401,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -414,7 +414,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -427,7 +427,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -440,7 +440,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -453,7 +453,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end 
 
 food = Food.new(
@@ -466,7 +466,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end
 
 food = Food.new(
@@ -479,7 +479,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end
 
 food = Food.new(
@@ -492,7 +492,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end
 
 food = Food.new(
@@ -505,7 +505,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end
 
 food = Food.new(
@@ -518,7 +518,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end
 
 food = Food.new(
@@ -531,7 +531,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end
 
 food = Food.new(
@@ -544,7 +544,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end
 
 food = Food.new(
@@ -557,7 +557,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end
 
 food = Food.new(
@@ -570,7 +570,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end
 
 food = Food.new(
@@ -583,7 +583,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end
 
 food = Food.new(
@@ -596,7 +596,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end
 
 food = Food.new(
@@ -609,7 +609,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end
 
 food = Food.new(
@@ -622,7 +622,7 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end
 
 food = Food.new(
@@ -635,5 +635,5 @@ food = Food.new(
 if food.save 
   puts "Food created successfully: #{food.name}"
 else 
-  puts "Failed to create food: #{food.errors_full_messages.join(', ')}"
+  puts "Failed to create food"
 end
