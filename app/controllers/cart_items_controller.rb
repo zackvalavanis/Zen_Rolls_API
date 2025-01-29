@@ -21,13 +21,10 @@ class CartItemsController < ApplicationController
   end
 
   def create
-    # Find or create the cart for the current user
     @cart = current_user.cart || current_user.create_cart
 
-    # Find or initialize the cart item by food_id (food is the model for items)
     @cart_item = @cart.cart_items.find_or_initialize_by(food_id: params[:food_id])
 
-    # Update the quantity if it exists or set the quantity to the given one
     @cart_item.quantity = (@cart_item.quantity || 0) + params[:quantity].to_i
 
     if @cart_item.save
