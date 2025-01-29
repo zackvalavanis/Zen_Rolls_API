@@ -3,10 +3,12 @@ class CartItemsController < ApplicationController
   def index
     @cart = current_user.cart
     if @cart
-      @cart_items = @cart.cart_items.includes(:food) # You can adjust to fetch related foods as needed
-
-      # Render the cart items as JSON
-      render json: @cart_items.as_json(include: :food)  # or adjust based on how you want to format the response
+      @cart_items = @cart.cart_items
+      # @cart_items.each do |food|
+      #   puts food
+      # end
+      # puts @cart
+      render :index
     else
       render json: { error: "Cart not found" }, status: :not_found
     end
