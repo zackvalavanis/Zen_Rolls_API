@@ -1,6 +1,7 @@
 json.cart_items cart.cart_items do |cart_item|
   json.id cart_item.id
   json.name cart_item.food.name
+  json.image_url cart_item.food.image_url
   json.quantity cart_item.quantity
   json.price cart_item.food.price
   json.item_price cart_item.item_price
