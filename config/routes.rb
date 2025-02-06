@@ -36,9 +36,10 @@ Rails.application.routes.draw do
   # Cart
   get '/carts' => 'carts#index'
   get '/cart' => 'carts#show'
-  post '/carts' => 'carts#create'
+  post '/cart' => 'carts#checkout'
   patch '/carts/:id' => 'carts#update'
-  delete '/carts/:id' => 'carts#destroy'
+  delete '/cart' => 'carts#destroy'
+
 
   #payments 
   post '/payments', to: 'payments#create'

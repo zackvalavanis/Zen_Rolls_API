@@ -1,3 +1,4 @@
+json.id cart.id
 json.cart_items cart.cart_items do |cart_item|
   json.id cart_item.id
   json.name cart_item.food.name
