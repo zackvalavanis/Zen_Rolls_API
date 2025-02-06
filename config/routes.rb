@@ -39,7 +39,10 @@ Rails.application.routes.draw do
   post '/carts' => 'carts#create'
   patch '/carts/:id' => 'carts#update'
   delete '/carts/:id' => 'carts#destroy'
-  
+
+  #payments 
+  post '/payments', to: 'payments#create'
+
   #health check
   get "up" => "rails/health#show"
   
