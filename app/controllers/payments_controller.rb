@@ -1,7 +1,6 @@
 class PaymentsController < ApplicationController
   def create
-    # Set up your Stripe secret key
-    Stripe.api_key = 'your-stripe-secret-key'
+    Stripe.api_key = import.meta.env.STRIPE_SECRET_KEY
 
     # Create a payment intent with the total amount (multiplied by 100 for cents)
     payment_intent = Stripe::PaymentIntent.create(
