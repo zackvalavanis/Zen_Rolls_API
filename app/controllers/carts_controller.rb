@@ -8,24 +8,24 @@ class CartsController < ApplicationController
   end
 
   def checkout
+    @cart = current_user.cart
+
     total_price = @cart.cart_items.sum { |item| item.food.price * item.quantity }
     
-    order = @cart.orders.create(total_price: total_price)
+    # order = @cart.orders.create(total_price: total_price)
     
-    render json: { order: order, total_price: total_price }
+    # render json: { order: order, total_price: total_price }
+
     @cart.cart_items.destroy_all
   end
 
   def destroy
-    # Find the user's cart
     @cart = current_user.cart
   
-    # Check if the cart exists before trying to delete cart items and the cart itself
     if @cart
-      # Destroy all cart items first to prevent foreign key violations
+
       @cart.cart_items.destroy_all
   
-      # Now destroy the cart
       if @cart.destroy
         render json: { message: "Cart deleted successfully" }, status: :ok
       else
