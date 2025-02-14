@@ -12,7 +12,7 @@ class CartsController < ApplicationController
 
     total_price = @cart.cart_items.sum { |item| item.food.price * item.quantity }
     
-    # order = @cart.orders.create(total_price: total_price)
+    # @order.create()
     
     # render json: { order: order, total_price: total_price }
 

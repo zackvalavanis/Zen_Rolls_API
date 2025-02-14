@@ -40,6 +40,8 @@ Rails.application.routes.draw do
   patch '/carts/:id' => 'carts#update'
   delete '/cart' => 'carts#destroy'
 
+  #order 
+  get '/orders' => 'orders#index'
 
   #payments 
   post '/payments', to: 'payments#create'
