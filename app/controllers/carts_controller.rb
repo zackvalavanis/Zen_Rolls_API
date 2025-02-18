@@ -9,16 +9,20 @@ class CartsController < ApplicationController
 
   def checkout
     @cart = current_user.cart
-
+  
+    # Calculate the total price of the cart
     total_price = @cart.cart_items.sum { |item| item.food.price * item.quantity }
-    
-    # @order.create()
-    
-    # render json: { order: order, total_price: total_price }
-
+  
+    # Create the order and associate it with the cart and user
+    @order = Order.create(user: current_user, total_price: total_price, cart: @cart)
+  
+    # Create order items from the cart items
+    @cart.cart_items.each do |item|
+      @order.order_items.create(food: item.food, quantity: item.quantity, price: item.food.price)
+    end
     @cart.cart_items.destroy_all
   end
-
+  
   def destroy
     @cart = current_user.cart
   

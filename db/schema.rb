@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_01_15_020415) do
+ActiveRecord::Schema[7.1].define(version: 2025_02_18_202036) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -48,6 +48,17 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_15_020415) do
     t.integer "inventory"
   end
 
+  create_table "order_items", force: :cascade do |t|
+    t.bigint "order_id", null: false
+    t.bigint "food_id", null: false
+    t.integer "quantity"
+    t.decimal "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["food_id"], name: "index_order_items_on_food_id"
+    t.index ["order_id"], name: "index_order_items_on_order_id"
+  end
+
   create_table "ordered_items", force: :cascade do |t|
     t.bigint "order_id", null: false
     t.bigint "cart_item_id", null: false
@@ -62,6 +73,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_15_020415) do
     t.decimal "total_price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "user_id"
     t.index ["cart_id"], name: "index_orders_on_cart_id"
   end
 
@@ -75,6 +87,8 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_15_020415) do
 
   add_foreign_key "cart_items", "carts"
   add_foreign_key "cart_items", "foods"
+  add_foreign_key "order_items", "foods"
+  add_foreign_key "order_items", "orders"
   add_foreign_key "ordered_items", "cart_items"
   add_foreign_key "ordered_items", "orders"
   add_foreign_key "orders", "carts"

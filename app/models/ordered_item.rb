@@ -1,5 +1,6 @@
 class OrderedItem < ApplicationRecord
   belongs_to :order
+  belongs_to:food
   belongs_to :cart_item
   
   def price
