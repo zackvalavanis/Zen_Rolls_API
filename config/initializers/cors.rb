@@ -1,11 +1,11 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'http://localhost:5173', 'https://zen-rolls-frontend-cwclm5qzl-zackvalavanis-projects.vercel.app'
+    origins '*'  # Allow all origins
 
-    resource '*',
-      headers: :any,
-      methods: [:get, :post, :put, :patch, :delete, :options, :head],
-      expose: ['Access-Control-Allow-Origin', 'Access-Control-Allow-Credentials'],
-      credentials: true
+    resource '*', 
+      headers: :any,  # Allow any headers
+      methods: [:get, :post, :put, :patch, :delete, :options, :head],  # Allowed methods
+      expose: ['Access-Control-Allow-Origin', 'Access-Control-Allow-Credentials'],  # Exposed headers
+      credentials: true  # Allow credentials (cookies, HTTP authentication)
   end
 end
