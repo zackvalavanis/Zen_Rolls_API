@@ -1,3 +1,4 @@
+# config/initializers/cors.rb
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
     origins 'http://localhost:5173', 'https://zen-rolls-frontend.vercel.app'
@@ -5,7 +6,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
     resource '*',
       headers: :any,
       methods: [:get, :post, :put, :patch, :delete, :options, :head],
-      expose: ['Access-Control-Allow-Origin'],
+      expose: ['Access-Control-Allow-Origin', 'Access-Control-Allow-Credentials'],
       credentials: true
   end
 end
