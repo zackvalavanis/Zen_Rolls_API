@@ -16,7 +16,6 @@ class CartsController < ApplicationController
     # Create the order and associate it with the cart and user
     @order = Order.create(user: current_user, total_price: total_price, cart: @cart)
   
-    # Create order items from the cart items
     @cart.cart_items.each do |item|
       @order.order_items.create(food: item.food, quantity: item.quantity, price: item.food.price)
     end
