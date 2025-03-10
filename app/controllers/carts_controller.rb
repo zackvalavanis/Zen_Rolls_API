@@ -8,19 +8,35 @@ class CartsController < ApplicationController
   end
 
   def checkout
+    if current_user.nil?
+      render json: { error: "User not authenticated" }, status: :unauthorized
+      return
+    end
+  
     @cart = current_user.cart
   
-    # Calculate the total price of the cart
+    if @cart.nil?
+      render json: { error: "Cart not found" }, status: :not_found
+      return
+    end
+  
     total_price = @cart.cart_items.sum { |item| item.food.price * item.quantity }
   
-    # Create the order and associate it with the cart and user
-    @order = Order.create(user: current_user, total_price: total_price, cart: @cart)
+    # Explicitly assign `user_id`
+    @order = Order.new(user_id: current_user.id, total_price: total_price, cart: @cart)
   
-    @cart.cart_items.each do |item|
-      @order.order_items.create(food: item.food, quantity: item.quantity, price: item.food.price)
+    if @order.save
+      @cart.cart_items.each do |item|
+        @order.order_items.create!(food: item.food, quantity: item.quantity, price: item.food.price)
+      end
+      @cart.cart_items.destroy_all
+      render json: { message: "Checkout successful", order_id: @order.id }, status: :ok
+    else
+      render json: { error: "Checkout failed", details: @order.errors.full_messages }, status: :unprocessable_entity
     end
-    @cart.cart_items.destroy_all
   end
+  
+  
   
   def destroy
     @cart = current_user.cart
